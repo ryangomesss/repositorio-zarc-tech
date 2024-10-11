@@ -17,9 +17,10 @@ export default function Home() {
         <div className="flex flex-col w-3/5">
           <TopContent></TopContent>
           <TopChannels></TopChannels>
-          <GraficoPizza></GraficoPizza>
         </div>
+
       </div>
+      <GraficoPizza></GraficoPizza>
 
     </div>
   );

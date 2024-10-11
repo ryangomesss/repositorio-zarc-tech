@@ -1,8 +1,7 @@
 'use client'
 
-// components/GraficoPizza.tsx
 import React from 'react';
-import { Pie } from 'react-chartjs-2';
+import { Doughnut } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
   ArcElement,
@@ -11,7 +10,6 @@ import {
   Title
 } from 'chart.js';
 
-// Registrar os componentes necessários do Chart.js
 ChartJS.register(ArcElement, Tooltip, Legend, Title);
 
 const GraficoPizza: React.FC = () => {
@@ -20,7 +18,7 @@ const GraficoPizza: React.FC = () => {
     datasets: [
       {
         label: 'Votes',
-        data: [12, 19, 3, 5, 2, 3], // Os dados do gráfico
+        data: [12, 19, 3, 5, 2, 3],
         backgroundColor: [
           'rgba(255, 99, 132, 0.6)',
           'rgba(54, 162, 235, 0.6)',
@@ -53,9 +51,10 @@ const GraficoPizza: React.FC = () => {
         text: 'Distribuição de Votos',
       },
     },
+    cutout: '70%', 
   };
 
-  return <Pie data={data} options={options} />;
+  return <Doughnut data={data} options={options} />; 
 };
 
 export default GraficoPizza;
