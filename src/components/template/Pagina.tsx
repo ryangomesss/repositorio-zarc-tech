@@ -4,7 +4,7 @@ import Main from "./Main";
 
 export default function Pagina(props: any) {
   return (
-    <div className="flex flex-1 min-h-screen bg-slate-200 h-screen">
+    <div className="flex flex-1 min-h-screen h-screen">
       <Navbar />
       <div className="flex flex-1 flex-col">
         <Header />

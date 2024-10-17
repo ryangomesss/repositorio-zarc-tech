@@ -2,9 +2,9 @@ import { IconArrowNarrowDown, IconArrowNarrowUp } from "@tabler/icons-react";
 
 export default function Tabelas() {
   return (
-    <section className="diagramaGrafico">
-      <aside className="containerDados">
-        <div className="dados">
+    <section className="flex flex-row justify-between py-6 rounded-md shadow-md">
+      <div className="containerDados">
+        <div className="flex flex-col px-10">
           <div className="flex justify-start gap-4 items-center">
             <span className="text-2xl">18.6K</span>
             <span className="text-sm text-green-500 flex items-center">
@@ -14,10 +14,10 @@ export default function Tabelas() {
           </div>
           <span className="text-xs text-slate-500">Unique Visitors</span>
         </div>
-      </aside>
+      </div>
 
-      <aside className="containerDados">
-        <div className="dados">
+      <div className="containerDados">
+        <div className="flex flex-col px-10">
           <div className="flex justify-start gap-4 items-center">
             <span className="text-2xl">55.9K</span>
             <span className="text-sm text-green-500 flex items-center">
@@ -27,10 +27,10 @@ export default function Tabelas() {
           </div>
           <span className="text-xs text-slate-500">Total Pageviews</span>
         </div>
-      </aside>
+      </div>
 
-      <aside className="containerDados">
-        <div className="dados">
+      <div className="containerDados">
+        <div className="flex flex-col px-10">
           <div className="flex justify-start gap-4 items-center">
             <span className="text-2xl">54%</span>
             <span className="text-sm text-green-500 flex items-center">
@@ -40,10 +40,10 @@ export default function Tabelas() {
           </div>
           <span className="text-xs text-slate-500">Bounce Rate</span>
         </div>
-      </aside>
+      </div>
 
-      <aside className="containerDados border-r-0">
-        <div className="dados">
+      <div className="containerDados border-r-0">
+        <div className="flex flex-col px-10">
           <div className="flex justify-start gap-4 items-center">
             <span className="text-2xl">2m56s</span>
             <span className="text-sm text-green-500 flex items-center">
@@ -53,7 +53,7 @@ export default function Tabelas() {
           </div>
           <span className="text-xs text-slate-500">Visit Duration</span>
         </div>
-      </aside>
+      </div>
     </section>
   );
 }

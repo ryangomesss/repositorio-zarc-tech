@@ -1,8 +1,8 @@
-import Menu from "./particles/Menu";
-import Support from "./particles/Support";
+import Menu from "./elementsMenu/Menu";
+import Support from "./elementsMenu/Support";
 import Image from "next/image";
 import LogoTailAdmin from "@/images/logoTailAdmin.png";
-import Others from "./particles/Others";
+import Others from "./elementsMenu/Others";
 
 export default function Navbar() {
   return (

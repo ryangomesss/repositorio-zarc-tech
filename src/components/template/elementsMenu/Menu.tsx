@@ -95,7 +95,7 @@ export default function Menu() {
                 href={"/"}
                 className="flex justify-between transition-all hover:text-zinc-50"
               >
-                Form Elements 
+                Form Layout 
               </Link>
               <Link
                 href={"/"}
@@ -153,7 +153,7 @@ export default function Menu() {
                 href={"/"}
                 className="flex justify-between transition-all hover:text-zinc-50"
               >
-                Mail Suces <span className="spanPro">Pro</span>
+                Mail Sucess <span className="spanPro">Pro</span>
               </Link>
             </AccordionContent>
           </AccordionItem>

@@ -16,7 +16,7 @@
     "@react-jvectormap/world": "^1.1.2",
     "@tabler/icons": "^3.19.0",
     "@tabler/icons-react": "^3.19.0",
-    "chart.js": "^4.4.4",
+    "chart.js": "^4.4.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "d3-scale": "^4.0.2",
