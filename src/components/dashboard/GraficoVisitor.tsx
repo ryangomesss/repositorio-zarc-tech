@@ -1,8 +1,9 @@
 "use client";
 
+import { useTheme } from "@/components/theme/ThemeContext";
 import { ChartConfig, ChartContainer } from "@/components/ui/chart";
-
 import { ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
+import { useEffect, useState } from "react";
 
 import {
   Bar,
@@ -13,39 +14,6 @@ import {
   ReferenceLine,
 } from "recharts";
 
-const chartData = [
-  { month: "1", desktop: 386 },
-  { month: "2", desktop: 186 },
-  { month: "3", desktop: 186 },
-  { month: "4", desktop: 286 },
-  { month: "5", desktop: 186 },
-  { month: "6", desktop: 186 },
-  { month: "7", desktop: 186 },
-  { month: "8", desktop: 186 },
-  { month: "9", desktop: 186 },
-  { month: "10", desktop: 186 },
-  { month: "11", desktop: 186 },
-  { month: "12", desktop: 286 },
-  { month: "13", desktop: 186 },
-  { month: "14", desktop: 386 },
-  { month: "15", desktop: 186 },
-  { month: "16", desktop: 186 },
-  { month: "17", desktop: 186 },
-  { month: "18", desktop: 286 },
-  { month: "19", desktop: 186 },
-  { month: "20", desktop: 386 },
-  { month: "21", desktop: 186 },
-  { month: "22", desktop: 286 },
-  { month: "23", desktop: 186 },
-  { month: "24", desktop: 186 },
-  { month: "25", desktop: 186 },
-  { month: "26", desktop: 286 },
-  { month: "27", desktop: 186 },
-  { month: "28", desktop: 186 },
-  { month: "29", desktop: 286 },
-  { month: "30", desktop: 186 },
-];
-
 const chartConfig = {
   desktop: {
     label: "Desktop",
@@ -54,6 +22,30 @@ const chartConfig = {
 } satisfies ChartConfig;
 
 export default function GraficoVisitor() {
+  const { isDarkMode } = useTheme();
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:3001/VisitorAnalytics");
+        const result = await response.json();
+
+        const formattedData = result.map((item: any, index: number) => ({
+          day: index + 1,
+          desktop: Number(item.totalVisitors),
+        }));
+
+
+        setData(formattedData);
+      } catch (error) {
+        console.error("Erro ao buscar os dados da API", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <section className="grafico-container w-full rounded-md shadow-md flex flex-col items-center justify-center">
       <div className="w-full p-3 flex items-center">
@@ -61,30 +53,29 @@ export default function GraficoVisitor() {
       </div>
       <ChartContainer config={chartConfig} className="h-[200px] w-full p-3">
         <BarChart
-          data={chartData}
+          data={data}
           margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
         >
           <CartesianGrid
             vertical={false}
             horizontal={true}
             strokeDasharray="4 4"
-            stroke="#0000FF"
+            stroke={isDarkMode ? "rgb(255 255 255)" : "rgb(0 0 255)"}
             strokeWidth={0.2}
           />
 
           <XAxis
-            dataKey="month"
+            dataKey="day"
             tickLine={false}
             tickMargin={10}
             axisLine={false}
-            tickFormatter={(value) => value.slice(0, 3)}
           />
 
           <YAxis
             tickLine={false}
             axisLine={false}
-            ticks={[0, 100, 200, 300, 400]}
-            domain={[0, 400]}
+            ticks={[0, 100, 200, 300, 400, 500]}
+            domain={[0, 500]}
           />
 
           <ReferenceLine stroke="blue" />

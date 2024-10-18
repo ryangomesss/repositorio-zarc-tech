@@ -14,14 +14,8 @@ import { useTheme } from "@/components/theme/ThemeContext";
 import { useState } from "react";
 
 export default function Header() {
-  const { toggleTheme } = useTheme();
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const { toggleTheme, isDarkMode } = useTheme(); // Obter o estado do tema
   const [isNotificationOpen, setIsNotificationOpen] = useState(false);
-
-  const handleToggleTheme = () => {
-    toggleTheme();
-    setIsDarkTheme(!isDarkTheme);
-  };
 
   const handleToggleNotifications = () => {
     setIsNotificationOpen((prev) => !prev);
@@ -42,11 +36,13 @@ export default function Header() {
         <div className="botaoHeader justify-start p-[4px] rounded-[16px]  w-16">
           <button
             className={`flex items-center justify-center p-[1px] rounded-full h-6 w-6 transform transition-transform duration-300 ${
-              isDarkTheme ? "translate-x-8 bg-slate-600 text-slate-200" : "bg-white"
+              isDarkMode
+                ? "translate-x-8 bg-background text-slate-200"
+                : "bg-white"
             }`}
-            onClick={handleToggleTheme}
+            onClick={toggleTheme} // Chamar diretamente o toggleTheme
           >
-            {isDarkTheme ? <IconMoon width={16} /> : <IconSun width={16} />}
+            {isDarkMode ? <IconMoon width={16} /> : <IconSun width={16} />}
           </button>
         </div>
         <div className="flex items-center gap-2 relative">
@@ -64,10 +60,7 @@ export default function Header() {
           )}
 
           <button className="botaoHeader relative">
-            <IconMessageCircle
-              stroke={1.5}
-              width={20}
-            />
+            <IconMessageCircle stroke={1.5} width={20} />
             <span className="h-2 w-2 absolute rounded-full top-[1px] right-[2px] bg-red-500"></span>
           </button>
         </div>

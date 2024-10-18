@@ -1,0 +1,286 @@
+{
+  "VisitorAnalytics": [
+    {
+      "id": 1,
+      "pageViews": "203",
+      "uniqueVisitors": "40",
+      "bounceRate": "50",
+      "medVisitDurations": "380"
+    },
+    {
+      "id": 2,
+      "pageViews": "123",
+      "uniqueVisitors": "23",
+      "bounceRate": "50",
+      "medVisitDurations": "130"
+    },
+    {
+      "id": 3,
+      "pageViews": "330",
+      "uniqueVisitors": "56",
+      "bounceRate": "50",
+      "medVisitDurations": "580"
+    },
+    {
+      "id": 4,
+      "pageViews": "243",
+      "uniqueVisitors": "68",
+      "bounceRate": "50",
+      "medVisitDurations": "180"
+    },
+    {
+      "id": 5,
+      "pageViews": "52",
+      "uniqueVisitors": "98",
+      "bounceRate": "54",
+      "medVisitDurations": "680"
+    },
+    {
+      "id": 6,
+      "pageViews": "167",
+      "uniqueVisitors": "57",
+      "bounceRate": "56",
+      "medVisitDurations": "170"
+    },
+    {
+      "id": 7,
+      "pageViews": "272",
+      "uniqueVisitors": "58",
+      "bounceRate": "58",
+      "medVisitDurations": "380"
+    },
+    {
+      "id": 8,
+      "pageViews": "181",
+      "uniqueVisitors": "93",
+      "bounceRate": "40",
+      "medVisitDurations": "280"
+    },
+    {
+      "id": 9,
+      "pageViews": "98",
+      "uniqueVisitors": "12",
+      "bounceRate": "20",
+      "medVisitDurations": "180"
+    },
+    {
+      "id": 10,
+      "pageViews": "129",
+      "uniqueVisitors": "35",
+      "bounceRate": "50",
+      "medVisitDurations": "580"
+    },
+    {
+      "id": 11,
+      "pageViews": "178",
+      "uniqueVisitors": "87",
+      "bounceRate": "70",
+      "medVisitDurations": "380"
+    },
+    {
+      "id": 12,
+      "pageViews": "131",
+      "uniqueVisitors": "54",
+      "bounceRate": "75",
+      "medVisitDurations": "150"
+    },
+    {
+      "id": 13,
+      "pageViews": "92",
+      "uniqueVisitors": "25",
+      "bounceRate": "40",
+      "medVisitDurations": "680"
+    },
+    {
+      "id": 14,
+      "pageViews": "140",
+      "uniqueVisitors": "32",
+      "bounceRate": "60",
+      "medVisitDurations": "150"
+    },
+    {
+      "id": 15,
+      "pageViews": "378",
+      "uniqueVisitors": "26",
+      "bounceRate": "20",
+      "medVisitDurations": "280"
+    },
+    {
+      "id": 16,
+      "pageViews": "280",
+      "uniqueVisitors": "64",
+      "bounceRate": "70",
+      "medVisitDurations": "480"
+    },
+    {
+      "id": 17,
+      "pageViews": "313",
+      "uniqueVisitors": "86",
+      "bounceRate": "90",
+      "medVisitDurations": "150"
+    },
+    {
+      "id": 18,
+      "pageViews": "180",
+      "uniqueVisitors": "65",
+      "bounceRate": "20",
+      "medVisitDurations": "130"
+    },
+    {
+      "id": 19,
+      "pageViews": "130",
+      "uniqueVisitors": "36",
+      "bounceRate": "0",
+      "medVisitDurations": "110"
+    },
+    {
+      "id": 20,
+      "pageViews": "291",
+      "uniqueVisitors": "87",
+      "bounceRate": "30",
+      "medVisitDurations": "280"
+    },
+    {
+      "id": 21,
+      "pageViews": "316",
+      "uniqueVisitors": "45",
+      "bounceRate": "72",
+      "medVisitDurations": "380"
+    },
+    {
+      "id": 22,
+      "pageViews": "223",
+      "uniqueVisitors": "63",
+      "bounceRate": "56",
+      "medVisitDurations": "184"
+    },
+    {
+      "id": 23,
+      "pageViews": "270",
+      "uniqueVisitors": "65",
+      "bounceRate": "20",
+      "medVisitDurations": "185"
+    },
+    {
+      "id": 24,
+      "pageViews": "231",
+      "uniqueVisitors": "34",
+      "bounceRate": "50",
+      "medVisitDurations": "186"
+    },
+    {
+      "id": 25,
+      "pageViews": "257",
+      "uniqueVisitors": "72",
+      "bounceRate": "79",
+      "medVisitDurations": "170"
+    },
+    {
+      "id": 26,
+      "pageViews": "232",
+      "uniqueVisitors": "53",
+      "bounceRate": "53",
+      "medVisitDurations": "100"
+    },
+    {
+      "id": 27,
+      "pageViews": "370",
+      "uniqueVisitors": "54",
+      "bounceRate": "23",
+      "medVisitDurations": "130"
+    },
+    {
+      "id": 28,
+      "pageViews": "230",
+      "uniqueVisitors": "64",
+      "bounceRate": "33",
+      "medVisitDurations": "130"
+    },
+    {
+      "id": 29,
+      "pageViews": "390",
+      "uniqueVisitors": "64",
+      "bounceRate": "10",
+      "medVisitDurations": "280"
+    },
+    {
+      "id": 30,
+      "pageViews": "331",
+      "uniqueVisitors": "93",
+      "bounceRate": "43",
+      "medVisitDurations": "380"
+    }
+  ],
+
+  "TopContent": [
+    { "id": 1, "url": "/", "views": "5500", "uniques": "2100" },
+    { "id": 2, "url": "/blog/", "views": "376", "uniques": "139" },
+    { "id": 3, "url": "/reserve/sucess", "views": "468", "uniques": "920" },
+    {
+      "id": 4,
+      "url": "/product/product-details",
+      "views": "298",
+      "uniques": "176"
+    },
+    {
+      "id": 3,
+      "url": "/blog/digital-marketing",
+      "views": "179",
+      "uniques": "57"
+    }
+  ],
+
+  "TopChannels": [
+    { "id": 1, "url": "Google", "views": "4200", "uniques": "3900" },
+    { "id": 2, "url": "Github", "views": "1900", "uniques": "509" },
+    { "id": 3, "url": "Producthunt", "views": "1500", "uniques": "986" },
+    { "id": 4, "url": "Facebook", "views": "974", "uniques": "639" },
+    { "id": 5, "url": "Twitter", "views": "289", "uniques": "57" }
+  ],
+
+  "VisitorsAnalytics": [
+    { "id": 1, "Desktop": "100", "percentage": "20" },
+    { "id": 2, "Tablet": "300", "percentage": "50" },
+    { "id": 3, "Mobile": "100", "percentage": "20" },
+    { "id": 4, "Unknown": "100", "percentage": "10" }
+  ],
+
+  "TopProducts": [
+    {
+      "id": 1,
+      "productName": "Apple Watch Series 7",
+      "productImage": "/images/product-01.svg",
+      "category": "Eletronics",
+      "price": "$269",
+      "sold": "22",
+      "profit": "$45"
+    },
+    {
+      "id": 2,
+      "productName": "Macbook Pro M1",
+      "productImage": "/images/product-02.svg",
+      "category": "Eletronics",
+      "price": "$546",
+      "sold": "34",
+      "profit": "$125"
+    },
+    {
+      "id": 3,
+      "productName": "Dell Inspiron",
+      "productImage": "/images/product-03.svg",
+      "category": "Eletronics",
+      "price": "$443",
+      "sold": "64",
+      "profit": "$247"
+    },
+    {
+      "id": 4,
+      "productName": "HP Probook 450",
+      "productImage": "/images/product-04.svg",
+      "category": "Eletronics",
+      "price": "$499",
+      "sold": "72",
+      "profit": "$103"
+    }
+  ]
+}
