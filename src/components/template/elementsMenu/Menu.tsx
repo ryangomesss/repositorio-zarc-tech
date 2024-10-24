@@ -16,6 +16,16 @@ import {
 import Link from "next/link";
 
 export default function Menu() {
+  
+  const router = useRouter();
+
+  const handleLinkClick = (label) => {
+    console.log(`Link clicado: ${label}`);
+    router.push('/');
+  };
+
+  
+  };
   return (
     <div className="flex flex-col pt-8 w-56">
       <h3 className="text-sm text-zinc-400 px-6">MENU</h3>
