@@ -16,7 +16,7 @@ import {
 import Link from "next/link";
 
 export default function Menu() {
-  
+
   const router = useRouter();
 
   const handleLinkClick = (label) => {
@@ -39,29 +39,29 @@ export default function Menu() {
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <Link href={"/"} className="flex justify-between transition-all hover:text-zinc-50">
+              <div onClick={() => handleLinkClick("eCommerce Pro")} className="flex justify-between transition-all hover:text-zinc-50 cursor-pointer">
                 eCommerce <span className="spanPro">Pro</span>
-              </Link>
-              <Link href={"/"} className="flex justify-between transition-all hover:text-zinc-50">
+              </div>
+              <div onClick={() => handleLinkClick("Analytics")} className="flex justify-between transition-all hover:text-zinc-50 cursor-pointer">
                 Analytics 
-              </Link>
-              <Link href={"/"} className="flex justify-between transition-all hover:text-zinc-50">
+              </div>
+              <div onClick={() => handleLinkClick("Marketing Pro")} className="flex justify-between transition-all hover:text-zinc-50 cursor-pointer">
                 Marketing <span className="spanPro">Pro</span>
-              </Link>
-              <Link href={"/"} className="flex justify-between transition-all hover:text-zinc-50">
+              </div>
+              <div onClick={() => handleLinkClick("CRM Pro")} className="flex justify-between transition-all hover:text-zinc-50 cursor-pointer">
                 CRM <span className="spanPro">Pro</span>
-              </Link>
+              </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-        <Link href={"/"} className="linkNav">
+        <div onClick={() => handleLinkClick("Calendar")} className="linkNav cursor-pointer">
           <IconCalendar />
           <span>Calendar</span>
-        </Link>
-        <Link href={"/"} className="linkNav">
+        </div>
+        <div onClick={() => handleLinkClick("Profile")} className="linkNav cursor-pointer">
           <IconUser />
           <span>Profile</span>
-        </Link>
+        </div>
         <Accordion type="single" collapsible>
           <AccordionItem value="item-2">
             <AccordionTrigger>
@@ -71,18 +71,12 @@ export default function Menu() {
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <Link
-                href={"/"}
-                className="flex justify-between transition-all hover:text-zinc-50"
-              >
+              <div onClick={() => handleLinkClick("List Pro")} className="flex justify-between transition-all hover:text-zinc-50 cursor-pointer">
                 List <span className="spanPro">Pro</span>
-              </Link>
-              <Link
-                href={"/"}
-                className="flex justify-between transition-all hover:text-zinc-50"
-              >
+              </div>
+              <div onClick={() => handleLinkClick("Kanban Pro")} className="flex justify-between transition-all hover:text-zinc-50 cursor-pointer">
                 Kanban <span className="spanPro">Pro</span>
-              </Link>
+              </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -95,31 +89,22 @@ export default function Menu() {
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <Link
-                href={"/"}
-                className="flex justify-between transition-all hover:text-zinc-50"
-              >
+              <div onClick={() => handleLinkClick("Form Elements")} className="flex justify-between transition-all hover:text-zinc-50 cursor-pointer">
                 Form Elements 
-              </Link>
-              <Link
-                href={"/"}
-                className="flex justify-between transition-all hover:text-zinc-50"
-              >
+              </div>
+              <div onClick={() => handleLinkClick("Form Layout")} className="flex justify-between transition-all hover:text-zinc-50 cursor-pointer">
                 Form Layout 
-              </Link>
-              <Link
-                href={"/"}
-                className="flex justify-between transition-all hover:text-zinc-50"
-              >
+              </div>
+              <div onClick={() => handleLinkClick("Form Validation Pro")} className="flex justify-between transition-all hover:text-zinc-50 cursor-pointer">
                 Form Validation <span className="spanPro">Pro</span>
-              </Link>
+              </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-        <Link href={"/"} className="linkNav">
+        <div onClick={() => handleLinkClick("Tables")} className="linkNav cursor-pointer">
           <IconTable />
           <span>Tables</span>
-        </Link>
+        </div>
         <Accordion type="single" collapsible>
           <AccordionItem value="item-4">
             <AccordionTrigger>
@@ -129,42 +114,24 @@ export default function Menu() {
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <Link
-                href={"/"}
-                className="flex justify-between transition-all hover:text-zinc-50"
-              >
+              <div onClick={() => handleLinkClick("Settings")} className="flex justify-between transition-all hover:text-zinc-50 cursor-pointer">
                 Settings
-              </Link>
-              <Link
-                href={"/"}
-                className="flex justify-between transition-all hover:text-zinc-50"
-              >
+              </div>
+              <div onClick={() => handleLinkClick("File Manager Pro")} className="flex justify-between transition-all hover:text-zinc-50 cursor-pointer">
                 File Manager <span className="spanPro">Pro</span>
-              </Link>
-              <Link
-                href={"/"}
-                className="flex justify-between transition-all hover:text-zinc-50"
-              >
+              </div>
+              <div onClick={() => handleLinkClick("Data Tables Pro")} className="flex justify-between transition-all hover:text-zinc-50 cursor-pointer">
                 Data Tables <span className="spanPro">Pro</span>
-              </Link>
-              <Link
-                href={"/"}
-                className="flex justify-between transition-all hover:text-zinc-50"
-              >
+              </div>
+              <div onClick={() => handleLinkClick("Pricing Tables Pro")} className="flex justify-between transition-all hover:text-zinc-50 cursor-pointer">
                 Pricing Tables <span className="spanPro">Pro</span>
-              </Link>
-              <Link
-                href={"/"}
-                className="flex justify-between transition-all hover:text-zinc-50"
-              >
+              </div>
+              <div onClick={() => handleLinkClick("Error Page Pro")} className="flex justify-between transition-all hover:text-zinc-50 cursor-pointer">
                 Error Page <span className="spanPro">Pro</span>
-              </Link>
-              <Link
-                href={"/"}
-                className="flex justify-between transition-all hover:text-zinc-50"
-              >
-                Mail Sucess <span className="spanPro">Pro</span>
-              </Link>
+              </div>
+              <div onClick={() => handleLinkClick("Mail Success Pro")} className="flex justify-between transition-all hover:text-zinc-50 cursor-pointer">
+                Mail Success <span className="spanPro">Pro</span>
+              </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
